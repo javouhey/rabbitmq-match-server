@@ -1,0 +1,32 @@
+<assembly>
+  <id>executable</id>
+  <formats>
+    <format>jar</format>
+  </formats>
+  <includeBaseDirectory>false</includeBaseDirectory>
+  <dependencySets>
+    <dependencySet>
+      <outputDirectory></outputDirectory>
+      <unpack>true</unpack>
+      <scope>runtime</scope>
+      <useProjectArtifact>false</useProjectArtifact>
+      <excludes>
+          <exclude>org.apache.geronimo.specs:geronimo-activation_1.1_spec</exclude>
+          <exclude>org.apache.geronimo.specs:geronimo-stax-api_1.0_spec</exclude>
+          <exclude>org.apache.geronimo.specs:geronimo-javamail_1.4_spec</exclude>
+          <exclude>org.apache.geronimo.specs:geronimo-jms_1.1_spec</exclude>
+          <exclude>javax.mail:mail</exclude>
+          <exclude>xml-apis:xml-apis</exclude>
+          <exclude>xerces:xercesImpl</exclude>
+          <exclude>xerces:xmlParserAPIs</exclude>
+          <exclude>xalan:xalan</exclude>
+      </excludes>
+    </dependencySet>
+  </dependencySets>
+  <fileSets>
+    <fileSet>
+      <directory>target/classes</directory>
+      <outputDirectory></outputDirectory>
+    </fileSet>
+  </fileSets>
+</assembly>
